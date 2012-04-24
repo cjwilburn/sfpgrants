@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+
+.menuBorder {
+	border-bottom: 1px #EAE4DA solid;
+}
+
+.menuIE {
+	height: 30px;
+}
+
+.menuOther {
+	height: 32px;
+}
+
+#subNavBg {
+	visibility: hidden;
+	height: 397px;
+	width: 198px;
+	position: absolute;
+	background-color: #FFFFFF;
+	border-left: 4px #005A84 solid;
+	border-bottom: 4px #005A84 solid;
+	border-right: 1px #005A84 solid;
+	margin-left: 158px;
+}
+
+#missionBorders {
+	border-left: 1px #EAE4DA solid;
+	border-right: 1px #EAE4DA solid;
+}
+
+#navBorder {
+	border-left: 1px #EAE4DA solid;
+}
+
+#nav, #nav ul, #nav li, #nav ul ul, #nav ul li li {
+	z-index: 1;
+}
+
+#nav {
+	position: absolute;
+}
+
+#nav ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#nav ul ul {
+	list-style: none;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+
+#nav ul li {
+	position: relative;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* Root Menu */
+#nav ul a {
+	display: block;
+	height: 1%; /* For IE6 */
+}
+
+#nav ul li:hover li a,
+#nav ul li.iehover li a {
+	display: block;
+	padding-top: 5px;
+	padding-left: 20px;
+	padding-bottom: 12px;
+	width: 150px;
+	color: #978970;
+	font-size: 12px;
+	text-decoration: none;
+	background-image: url(/_images/nav/subNavDiv.gif);
+	background-position: 20px bottom;
+	background-repeat: no-repeat;
+}
+
+#nav ul li:hover li a:hover,
+#nav ul li:hover li:hover a,
+#nav ul li.iehover li a:hover,
+#nav ul li.iehover li.iehover a {
+	color: #2F6F88;
+}
+
+#nav ul li:hover li:hover,
+#nav ul li.iehover li.iehover {
+	background-image: url(/_images/nav/blue_arrow.gif);
+	background-position: 12px 9px; /* from left top */
+	background-repeat: no-repeat;
+}
+
+#nav ul.byaudience div.flyout_bottom {
+	position: absolute;
+	height: 150px;
+	margin-bottom: 0;
+	top: -115px;
+	left: 159px;
+}
+
+#nav ul.byaudience div.flyout_bottom ul {
+	position: absolute;
+	bottom: 0;
+}
+
+#nav ul.bydept ul {
+	display: none;
+	position: absolute;
+	top: 0px;
+	padding: 0px;
+	margin: 0px;
+	left: 159px;
+}
+
+#nav ul.byaudience div {
+	display: none;
+	position: absolute;
+	top: 0px;
+	padding: 0px;
+	margin: 0px;
+	left: 159px;
+}
+
+#nav ul.byaudience li:hover div,
+#nav ul.byaudience li.iehover div {
+	display: block;
+}
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+#nav ul li:hover ul,
+#nav ul li.iehover ul {
+  display: block;
+  padding-top: 4px;
+}

@@ -1,0 +1,30 @@
+/*
+	Fluid 960 Grid System - IE Fixes (IE7 and greater)
+	Learn more ~ http://www.designinfluences.com/
+
+	Licensed under GPL and MIT.
+*/
+
+/* =Grid >> Global
+--------------------------------------------------------------------------------*/
+
+div.grid_12 {
+	padding-top: 1px;
+}
+
+.grid_4 .box {
+	margin-top: -1px;
+}
+
+form#ProposalGrantSubmissionForm div.file input,
+form#ProposalEditForm div.file input,
+form#ProposalGranteeGrantSubmissionForm div.file input {
+	width: 400px;
+	
+}
+
+
+
+
+
+
